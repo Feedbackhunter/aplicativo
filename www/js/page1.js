@@ -1,5 +1,5 @@
-function teste(var resultado){
+function teste(){
 	alert("hauhauhauhauha");
 	alert("kkkkkkkkkkkkk");
-	alert(resultado);
+	alert(localStorage.getItem("resultado"));
 }
