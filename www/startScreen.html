@@ -15,7 +15,12 @@
         <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
         <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
         rel="stylesheet" />
-        
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
         <script type="text/javascript">
                     $(document).bind("mobileinit", function()
             {
@@ -31,12 +36,45 @@
                 }
             });
         </script>
-        
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
     </head>
     
     <body>
         <script language="JavaScript" type="text/javascript">
-                
+            app.initialize();
         </script>
         <div data-role="page" style="min-height:800px;" dsid="startScreen" id="startScreen"
         class="type-interior" data-theme="b">
@@ -51,6 +89,8 @@
             <div data-role="content" id="startScreen_mobilecontainer" name="mobilecontainer"
             class="startScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
                 <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
                 <!-- mobileimage_2 -->
                 <img class="startScreen_mobileimage_2" src="files/views/assets/image/logo_1411510085.png"
                 id="startScreen_mobileimage_2" dsid="mobileimage_2" name="mobileimage_2" />
@@ -67,7 +107,7 @@
                 </div>
                 <!-- mobilebutton_2 --><!--
                 --><a data-role="button" name="mobilebutton_2" dsid="mobilebutton_2" class="startScreen_mobilebutton_2"
-                id="startScreen_mobilebutton_2" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                id="botao" data-corners="true" data-icon="none" data-iconpos='nowhere'
                 x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="1">
                 Escanear
                 </a>
@@ -77,11 +117,6 @@
             dsid="mobilefooter" id="startScreen_mobilefooter" data-theme="b">
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="startScreen.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 
 </html>

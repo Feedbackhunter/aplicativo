@@ -17,7 +17,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        document.getElementById("startScreen_mobilebutton_2").addEventListener("click", function () {
+        document.getElementById("botão").addEventListener("click", function () {
           cordova.plugins.barcodeScanner.scan(function (value) {
             if (value.text >= "1" && value.text <= "500") {
                 localStorage.setItem("resultado", value.text);
