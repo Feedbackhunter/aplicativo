@@ -18,20 +18,7 @@ var app = {
         app.receivedEvent('deviceready');
 
         document.getElementById("botão").addEventListener("click", function () {
-          cordova.plugins.barcodeScanner.scan(function (value) {
-            if (value.text >= "1" && value.text <= "500") {
-                localStorage.setItem("resultado", value.text);
-                window.location.replace("page1.html");
-                $url = 'http://feedbackhunter.esy.es/formulario/?f=' + value.text + '&uuid=' + device.uuid;
-                var ref = window.open($url, '_blank', "location=yes,closebuttoncaption=Fechar, width='400', height='800'");
-                ref.addEventListener('loadstart', function(event) {
-                    if (event.url.match("mobile/close")) {
-                        ref.close();
-                    }
-                });
-            }
-            
-          });
+          alert("HAUHAUHAUHA");
         });
     },
     // Update DOM on a Received Event
