@@ -34,11 +34,17 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        document.getElementById("botao").addEventListener("click", function (result) {
-          alert("We got a barcode\n" +
+        document.getElementById("botao").addEventListener("click", function () {
+          cordova.plugins.barcodeScanner.scan(function (result) {
+            alert("We got a barcode\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
+            }, 
+            function (error) {
+          alert("Scanning failed: " + error);
+            }
+   );
       });
     },
     // Update DOM on a Received Event
