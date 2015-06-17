@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+resultado = "";
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -34,17 +36,14 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
         document.getElementById("botao").addEventListener("click", function () {
           cordova.plugins.barcodeScanner.scan(function (result) {
-            alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-            }, 
-            function (error) {
-          alert("Scanning failed: " + error);
-            }
-   );
+            if (result.text == '36') {
+                resultado = result.text;
+                window.location.replace("page1.html");
+            };
+            });
       });
     },
     // Update DOM on a Received Event
