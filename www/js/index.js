@@ -16,8 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-resultado = "";
-
 var app = {
     // Application Constructor
     initialize: function() {
@@ -40,8 +38,7 @@ var app = {
         document.getElementById("botao").addEventListener("click", function () {
           cordova.plugins.barcodeScanner.scan(function (result) {
             if (result.text == '36') {
-                resultado = result.text;
-                window.location.replace("page1.html");
+                window.location.replace("page1.php?resultado=".result.text);
             };
             });
       });
