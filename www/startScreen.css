@@ -1,0 +1,43 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.startScreen_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_2 */
+.startScreen_mobileimage_2 {
+	margin: 0px 0px 0px 0px;
+	width: 199px; height: 60px;
+	display: block;
+}
+/* spacer_3 */
+.startScreen_spacer_3 {
+	width: 260px; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_5 */
+.startScreen_mobilelabel_5 {
+	text-decoration: none; font-weight: bold; font-style: italic; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* spacer_6 */
+.startScreen_spacer_6 {
+	width: 260px; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_2 */
+#startScreen_mobilebutton_2 {
+
+}
+.ui-btn.startScreen_mobilebutton_2 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.startScreen_mobilefooter {
+	min-height:38px;
+}
