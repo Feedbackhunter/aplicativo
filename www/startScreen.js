@@ -17,7 +17,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        document.getElementById("botão").addEventListener("click", function () {
+        document.getElementById("botao").addEventListener("click", function () {
           alert("HAUHAUHAUHA");
         });
     },
