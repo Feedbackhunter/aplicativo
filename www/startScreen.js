@@ -17,9 +17,17 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        document.getElementById("botao").addEventListener("click", function () {
+        if (document.getElementById("botao").addEventListener) {
+            document.getElementById("botao").addEventListener("click", function () {
           alert("HAUHAUHAUHA");
         });
+        } else if (document.getElementById("botao").attachEvent){
+            document.getElementById("botao").attachEvent("click", function () {
+          alert("HAUHAUHAUHA");
+        });
+
+        }
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
